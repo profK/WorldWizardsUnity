@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/WorldWizards/Resources/Scenes/LevelBuilder.unity
+  isLoaded: 1
+  isActive: 1
