@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 14
-  productGUID: f72cb524d6e4fbe498e74eb591f6bc44
+  productGUID: 9b3cf0a3917e44e49a091eb620d33721
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -12,11 +12,11 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: WorldWizardsUnity
+  productName: WWRef
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashScreen: 0
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
@@ -562,14 +562,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: WorldWizardsUnity
+  metroPackageName: WWRef
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: WorldWizardsUnity
+  metroApplicationDescription: WWRef
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -638,8 +638,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: b5a9b6a8-75e9-41cf-b4fa-e9a0f4d20aaa
-  projectName: WorldWizardsUnity
+  cloudProjectId: e987eecc-3bc4-4ca4-967b-dca7148dcc8b
+  projectName: WWRef
   organizationId: jeff-kesselman
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
