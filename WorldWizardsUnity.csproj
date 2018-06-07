@@ -290,9 +290,6 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets/ThirdParty/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>C:/Users/jeffp/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
@@ -314,6 +311,9 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/jeffp/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets/WorldWizards/Framework/ThirdParty/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -322,61 +322,60 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\core\controller\builder\GridController.cs" />
-    <Compile Include="Assets\core\controller\builder\MaterialSwitcher.cs" />
-    <Compile Include="Assets\core\controller\builder\SceneScalerController.cs" />
-    <Compile Include="Assets\core\controller\resources\ResourceLoader.cs" />
-    <Compile Include="Assets\core\controller\resources\WWAssetBundleController.cs" />
-    <Compile Include="Assets\core\controller\resources\WWResourceController.cs" />
-    <Compile Include="Assets\core\entity\common\InteractionType.cs" />
-    <Compile Include="Assets\core\entity\common\WWType.cs" />
-    <Compile Include="Assets\core\entity\coordinate\Coordinate.cs" />
-    <Compile Include="Assets\core\entity\coordinate\IntVector3.cs" />
-    <Compile Include="Assets\core\entity\coordinate\utils\CoordinateHelper.cs" />
-    <Compile Include="Assets\core\entity\gameObject\Door.cs" />
-    <Compile Include="Assets\core\entity\gameObject\Interactable.cs" />
-    <Compile Include="Assets\core\entity\gameObject\Prop.cs" />
-    <Compile Include="Assets\core\entity\gameObject\resource\metaData\WWDoorHolderConfiguration.cs" />
-    <Compile Include="Assets\core\entity\gameObject\resource\metaData\WWDoorHolderMetaData.cs" />
-    <Compile Include="Assets\core\entity\gameObject\resource\metaData\WWDoorMetaData.cs" />
-    <Compile Include="Assets\core\entity\gameObject\resource\metaData\WWObjectMetaData.cs" />
-    <Compile Include="Assets\core\entity\gameObject\resource\metaData\WWResourceMetaData.cs" />
-    <Compile Include="Assets\core\entity\gameObject\resource\metaData\WWTileMetaData.cs" />
-    <Compile Include="Assets\core\entity\gameObject\resource\metaData\WWWallMetaData.cs" />
-    <Compile Include="Assets\core\entity\gameObject\resource\WWResource.cs" />
-    <Compile Include="Assets\core\entity\gameObject\Tile.cs" />
-    <Compile Include="Assets\core\entity\gameObject\utils\WWObjectFactory.cs" />
-    <Compile Include="Assets\core\entity\gameObject\utils\WWWallsHelper.cs" />
-    <Compile Include="Assets\core\entity\gameObject\WWObject.cs" />
-    <Compile Include="Assets\core\entity\gameObject\WWObjectData.cs" />
-    <Compile Include="Assets\core\entity\gameObject\WWTransform.cs" />
-    <Compile Include="Assets\core\entity\gameObject\WWWalls.cs" />
-    <Compile Include="Assets\core\entity\level\SceneDictionary.cs" />
-    <Compile Include="Assets\core\entity\level\utils\BuilderAlgorithms.cs" />
-    <Compile Include="Assets\core\file\entity\CoordinateJSONBlob.cs" />
-    <Compile Include="Assets\core\file\entity\WWObjectJSONBlob.cs" />
-    <Compile Include="Assets\core\file\entity\WWTransformJSONBlob.cs" />
-    <Compile Include="Assets\core\file\utils\FileIO.cs" />
-    <Compile Include="Assets\core\manager\Manager.cs" />
-    <Compile Include="Assets\core\manager\ManagerRegistry.cs" />
-    <Compile Include="Assets\core\manager\SceneGraphManager.cs" />
-    <Compile Include="Assets\core\manager\SceneGraphManagerImpl.cs" />
-    <Compile Include="Assets\core\manager\Singleton.cs" />
-    <Compile Include="Assets\core\manager\WWMain.cs" />
-    <Compile Include="Assets\core\manager\WWObjectGunManager.cs" />
-    <Compile Include="Assets\ThirdParty\WWUtils\CSharp\Types\TypeHelper.cs" />
-    <Compile Include="Assets\ThirdParty\WWUtils\ManagerSingleton.cs" />
-    <Compile Include="Assets\ThirdParty\WWUtils\Unity\SerializationProxies\Templates\SPDictionaryTemplate.cs" />
-    <Compile Include="Assets\ThirdParty\WWUtils\Unity\SerializationProxies\Wrappers\SPWType.cs" />
+    <Compile Include="Assets\WorldWizards\Framework\file\FileIO.cs" />
+    <Compile Include="Assets\WorldWizards\Framework\Manager\Manager.cs" />
+    <Compile Include="Assets\WorldWizards\Framework\Manager\ManagerRegistry.cs" />
+    <Compile Include="Assets\WorldWizards\Framework\ThirdParty\WWUtils\CSharp\Types\TypeHelper.cs" />
+    <Compile Include="Assets\WorldWizards\Framework\ThirdParty\WWUtils\ManagerSingleton.cs" />
+    <Compile Include="Assets\WorldWizards\Framework\ThirdParty\WWUtils\Unity\SerializationProxies\Templates\SPDictionaryTemplate.cs" />
+    <Compile Include="Assets\WorldWizards\Framework\ThirdParty\WWUtils\Unity\SerializationProxies\Wrappers\SPWType.cs" />
+    <Compile Include="Assets\WorldWizards\Framework\utils\Singleton.cs" />
+    <Compile Include="Assets\WorldWizards\Framework\WWMain.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\controller\builder\GridController.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\controller\builder\MaterialSwitcher.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\controller\builder\SceneScalerController.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\controller\resources\ResourceLoader.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\controller\resources\WWAssetBundleController.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\controller\resources\WWResourceController.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\common\InteractionType.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\common\WWType.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\coordinate\Coordinate.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\coordinate\IntVector3.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\coordinate\utils\CoordinateHelper.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\Door.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\Interactable.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\Prop.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\resource\metaData\WWDoorHolderConfiguration.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\resource\metaData\WWDoorHolderMetaData.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\resource\metaData\WWDoorMetaData.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\resource\metaData\WWObjectMetaData.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\resource\metaData\WWResourceMetaData.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\resource\metaData\WWTileMetaData.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\resource\metaData\WWWallMetaData.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\resource\WWResource.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\Tile.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\utils\WWObjectFactory.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\utils\WWWallsHelper.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\WWObject.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\WWObjectData.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\WWTransform.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\gameObject\WWWalls.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\level\SceneDictionary.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\entity\level\utils\BuilderAlgorithms.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\fileio\CoordinateJSONBlob.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\fileio\WWObjectJSONBlob.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\fileio\WWTransformJSONBlob.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\Manager\SceneGraphManager.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\Manager\SceneGraphManagerImpl.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Resources\Shaders\GridShader.shader" />
-    <None Include="Assets\Resources\Shaders\Highlight.shader" />
-    <None Include="Assets\Resources\Shaders\MobileBlur.shader" />
-    <None Include="Assets\ThirdParty\JsonDotNet\Assemblies\AOT\Newtonsoft.Json.XML" />
-    <None Include="Assets\ThirdParty\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.XML" />
-    <None Include="Assets\ThirdParty\JsonDotNet\Assemblies\Windows\Newtonsoft.Json.XML" />
-    <None Include="Assets\ThirdParty\JsonDotNet\link.xml" />
+    <None Include="Assets\WorldWizards\Framework\ThirdParty\JsonDotNet\Assemblies\AOT\Newtonsoft.Json.XML" />
+    <None Include="Assets\WorldWizards\Framework\ThirdParty\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.XML" />
+    <None Include="Assets\WorldWizards\Framework\ThirdParty\JsonDotNet\Assemblies\Windows\Newtonsoft.Json.XML" />
+    <None Include="Assets\WorldWizards\Framework\ThirdParty\JsonDotNet\link.xml" />
+    <None Include="Assets\WorldWizards\TileMap\Resources\Shaders\GridShader.shader" />
+    <None Include="Assets\WorldWizards\TileMap\Resources\Shaders\Highlight.shader" />
+    <None Include="Assets\WorldWizards\TileMap\Resources\Shaders\MobileBlur.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
