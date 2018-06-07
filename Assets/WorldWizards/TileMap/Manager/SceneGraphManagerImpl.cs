@@ -1,8 +1,9 @@
 using System;
-using System.Collections.Generic;
+using Boo.Lang;
 using Newtonsoft.Json;
 using UnityEngine;
 using WorldWizards.core.controller.builder;
+using WorldWizards.core.controller.resources;
 using WorldWizards.core.entity.common;
 using WorldWizards.core.entity.coordinate;
 using WorldWizards.core.entity.coordinate.utils;
@@ -33,7 +34,11 @@ namespace WorldWizards.core.manager
         /// </summary>
         public SceneGraphManagerImpl()
         {
+            Debug.Log("Setting up SG Manager");
             sceneDictionary = new SceneDictionary();
+            ResourceLoader.LoadResources();
+            // add ourselves to the scene
+            Object.Instantiate(Resources.Load("Prefabs/GridController"));
         }
         
         /// <see cref="SceneGraphManager.SceneSize"/>
@@ -45,12 +50,12 @@ namespace WorldWizards.core.manager
         /// <see cref="SceneGraphManager.ClearAll"/>
         public void ClearAll()
         {
-            List<Guid> keys = sceneDictionary.GetAllGuids();
+            System.Collections.Generic.List<Guid> keys = sceneDictionary.GetAllGuids();
             foreach (Guid key in keys) Delete(key);
         }
 
         /// <see cref="SceneGraphManager.GetObjectsInCoordinateIndex"/>
-        public List<WWObject> GetObjectsInCoordinateIndex(Coordinate coordinate)
+        public System.Collections.Generic.List<WWObject> GetObjectsInCoordinateIndex(Coordinate coordinate)
         {
             return sceneDictionary.GetObjects(coordinate);
         }
@@ -68,11 +73,11 @@ namespace WorldWizards.core.manager
         /// <see cref="SceneGraphManager.HideObjectsAbove"/>
         public void HideObjectsAbove(int height)
         {
-            List<WWObject> objects = sceneDictionary.GetObjectsAbove(height);
+            System.Collections.Generic.List<WWObject> objects = sceneDictionary.GetObjectsAbove(height);
             foreach (WWObject obj in objects)
                 obj.MaterialSwitcher.SwitchOff();
 
-            List<WWObject> objectsAtAndBelow = sceneDictionary.GetObjectsAtAndBelow(height);
+            System.Collections.Generic.List<WWObject> objectsAtAndBelow = sceneDictionary.GetObjectsAtAndBelow(height);
             foreach (WWObject obj in objectsAtAndBelow)
                 obj.MaterialSwitcher.SwitchOn();
         }
@@ -80,7 +85,7 @@ namespace WorldWizards.core.manager
         /// <see cref="SceneGraphManager.ChangeScale"/>
         public void ChangeScale(float scale)
         {
-            List<WWObject> allObjects = sceneDictionary.GetAllObjects();
+            System.Collections.Generic.List<WWObject> allObjects = sceneDictionary.GetAllObjects();
             foreach (WWObject obj in allObjects)
             {
 
@@ -96,7 +101,7 @@ namespace WorldWizards.core.manager
         /// <see cref="SceneGraphManager.GetWallsAtCoordinate"/>
         public WWWalls GetWallsAtCoordinate(Coordinate coordinate)
         {
-            List<WWObject> objects = GetObjectsInCoordinateIndex(coordinate);
+            System.Collections.Generic.List<WWObject> objects = GetObjectsInCoordinateIndex(coordinate);
             WWWalls walls = 0;
             foreach (WWObject obj in objects)
                 walls = walls | obj.GetWallsWRotationApplied();
@@ -128,8 +133,8 @@ namespace WorldWizards.core.manager
                     WWObject parentObject = Get(parent.id);
                     parentObject.RemoveChild(rootObject);
                 }
-                
-                List<WWObjectData> objectDescendents = rootObject.GetAllDescendents();
+
+                System.Collections.Generic.List<WWObjectData> objectDescendents = rootObject.GetAllDescendents();
                 // include the root
                 objectDescendents.Add(rootObject.objectData);
 
@@ -147,7 +152,7 @@ namespace WorldWizards.core.manager
         /// <see cref="SceneGraphManager.Save"/>
         public void Save(string filePath)
         {
-            List<WWObjectJSONBlob> objectsToSave = sceneDictionary.GetObjectsAsJSONBlobs();
+            System.Collections.Generic.List<WWObjectJSONBlob> objectsToSave = sceneDictionary.GetObjectsAsJSONBlobs();
             string json = JsonConvert.SerializeObject(objectsToSave);
             FileIO.SaveJsonToFile(json, filePath);
         }
@@ -157,7 +162,7 @@ namespace WorldWizards.core.manager
         {
             string json = FileIO.LoadJsonFromFile(filePath);
 
-            var objectsToRestore = JsonConvert.DeserializeObject<List<WWObjectJSONBlob>>(json);
+            var objectsToRestore = JsonConvert.DeserializeObject<System.Collections.Generic.List<WWObjectJSONBlob>>(json);
             Debug.Log(string.Format("Loaded {0} objects from file", objectsToRestore.Count));
 
             foreach (WWObjectJSONBlob obj in objectsToRestore)
@@ -171,7 +176,7 @@ namespace WorldWizards.core.manager
             foreach (WWObjectJSONBlob obj in objectsToRestore)
             {
                 WWObject root = Get(obj.id);
-                var childrenToRestore = new List<WWObject>();
+                var childrenToRestore = new System.Collections.Generic.List<WWObject>();
                 foreach (Guid childID in obj.children)
                 {
                     WWObject childObject = Get(childID);
@@ -186,7 +191,7 @@ namespace WorldWizards.core.manager
         {
             float doorWidth = door.GetWidth();
             float doorHeight = door.GetHeight();
-            List<WWDoorHolderMetadata> doorHolders = tile.GetDoorHolders();
+            System.Collections.Generic.List<WWDoorHolderMetadata> doorHolders = tile.GetDoorHolders();
             // TODO, use the DoorHolder that is closest to the hitPoint
             // TODO handle the posibility that a Tile has mutliple Door Holders
             if (doorHolders.Count > 0)
@@ -227,12 +232,12 @@ namespace WorldWizards.core.manager
         }
 
 
-        public List<Collider> GetAllColliders(WWType wwType)
+        public System.Collections.Generic.List<Collider> GetAllColliders(WWType wwType)
         {
             return sceneDictionary.GetColliders(wwType);
         }
         
-        public List<Collider> GetAllColliders()
+        public System.Collections.Generic.List<Collider> GetAllColliders()
         {
             return sceneDictionary.GetAllColliders();
         }
@@ -257,7 +262,7 @@ namespace WorldWizards.core.manager
         }
 
         /// <see cref="SceneGraphManager.DoesNotCollide"/>
-        public bool DoesNotCollide(List<WWObject> wwObjects)
+        public bool DoesNotCollide(System.Collections.Generic.List<WWObject> wwObjects)
         {
             return sceneDictionary.DoesNotCollide(wwObjects);
         }
