@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WWRef", "WWRef.csproj", "{402A3376-ED23-08D7-4A8A-5C94794011AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WWRef.Editor", "WWRef.Editor.csproj", "{DFCE828C-D6E9-2030-07FF-AB59C3698F97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{402A3376-ED23-08D7-4A8A-5C94794011AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{402A3376-ED23-08D7-4A8A-5C94794011AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{402A3376-ED23-08D7-4A8A-5C94794011AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{402A3376-ED23-08D7-4A8A-5C94794011AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCE828C-D6E9-2030-07FF-AB59C3698F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCE828C-D6E9-2030-07FF-AB59C3698F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCE828C-D6E9-2030-07FF-AB59C3698F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCE828C-D6E9-2030-07FF-AB59C3698F97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
