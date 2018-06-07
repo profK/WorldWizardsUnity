@@ -264,8 +264,6 @@ GameObject:
   - component: {fileID: 1656409409}
   - component: {fileID: 1656409408}
   - component: {fileID: 1656409407}
-  - component: {fileID: 1656409410}
-  - component: {fileID: 1656409411}
   m_Layer: 0
   m_Name: DesktopCamera
   m_TagString: MainCamera
@@ -329,27 +327,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
---- !u!114 &1656409410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1656409404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 211ee4594dbb455797eea285ebda608d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1656409411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1656409404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ba9db0349af49d4bbcbd20404fdabd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  headCamera: {fileID: 0}
-  desktopCamera: {fileID: 1656409408}
