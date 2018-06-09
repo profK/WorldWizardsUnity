@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42139f3bc83396840ac890db178ac0c0, type: 3}
+  m_Name: UnityInputAxisList
+  m_EditorClassIdentifier: 
+  axesList:
+  - name: Horizontal
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
+  - name: Vertical
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
+  - name: Fire1
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
+  - name: Fire2
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
+  - name: Fire3
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
+  - name: Jump
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
+  - name: Mouse X
+    description: 
+    axis: 0
+    inputType: 1
+    joynum: 0
+  - name: Mouse Y
+    description: 
+    axis: 1
+    inputType: 1
+    joynum: 0
+  - name: Mouse ScrollWheel
+    description: 
+    axis: 2
+    inputType: 1
+    joynum: 0
+  - name: Horizontal
+    description: 
+    axis: 0
+    inputType: 2
+    joynum: 0
+  - name: Vertical
+    description: 
+    axis: 1
+    inputType: 2
+    joynum: 0
+  - name: Fire1
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
+  - name: Fire2
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
+  - name: Fire3
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
+  - name: Jump
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
+  - name: Submit
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
+  - name: Submit
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
+  - name: Cancel
+    description: 
+    axis: 0
+    inputType: 0
+    joynum: 0
