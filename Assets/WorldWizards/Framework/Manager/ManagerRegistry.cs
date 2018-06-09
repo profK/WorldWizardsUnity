@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using WorldWizards.WWUtils.CSharp.Types;
+
 
 namespace WorldWizards.core.manager
 {
