@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using UnityEngine;
+using WorldWizards.core.entity.gameObject.resource.metaData;
 
 namespace WorldWizards.core.entity.gameObject.resource.metaData
 {
