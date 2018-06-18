@@ -29,7 +29,7 @@ public class MenuManager : Manager {
 
         rootMenuSprite = Resources.Load<Sprite>("defaultRootSprite");
         defaultMenuSprite = Resources.Load<Sprite>("defaultMenuSprite");
-        basicButtonPrefab = Resources.Load<GameObject>("BasicButton");
+        basicButtonPrefab = Resources.Load<GameObject>("RadialButton");
         GameObject menu =
             MakeRadialMenu(MakeMenusFromTileset());
         menu.transform.parent = uiCanvas.transform;
@@ -39,11 +39,10 @@ public class MenuManager : Manager {
 
     public GameObject MakeRadialMenu(ButtonRec recRoot)
     {
-        GameObject root =
-            GameObject.Instantiate(Resources.Load<GameObject>("RadialRootButton"));
-       
-       // AddChildren(root.transform, recRoot);
-       // RadialLayout(root);
+        GameObject root = MakeRadialButton(recRoot);
+        root.GetComponent<RadialMenuController>() .SetCenter(true);
+        AddChildren(root.transform, recRoot);
+        
         return root;
     }
 
@@ -52,7 +51,7 @@ public class MenuManager : Manager {
         GameObject newButton = GameObject.Instantiate(basicButtonPrefab);
         newButton.GetComponentInChildren<Text>().text = recRoot.text;
         newButton.GetComponentInChildren<Image>().sprite = recRoot.image;
-        newButton.transform.localScale = new Vector3(0.2f,0.2f,1);
+       
         
         return newButton;
     }
@@ -63,9 +62,9 @@ public class MenuManager : Manager {
         {
             GameObject newButton = MakeRadialButton(brec);
             newButton.transform.parent = parentXform;
-           // RadialLayout(newButton);
+           
         }
-        
+        RadialLayout(parentXform.gameObject);
 
     }
 
