@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class RadialButtonController : MonoBehaviour
 {
     private SelectionButtonsParent selectionParent;
+    public float spacing = 10f;
 
     public GameObject ButtonPrototype;
 	// Use this for initialization
@@ -42,9 +43,10 @@ public class RadialButtonController : MonoBehaviour
             Vector3 placementVec =
                 new Vector3((float) Math.Sin(angle),
                     (float) Math.Cos(angle), 0) *
-                (centerRadius + menuRadius);
+                (centerRadius + menuRadius+spacing);
 
             menuTform.localPosition = placementVec;
+            menuTform.GetComponent<RadialButtonController>().RadialLayout();
         }
     }
 

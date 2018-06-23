@@ -1,4 +1,5 @@
 using UnityEngine;
+using WorldWizards.core.controller.resources;
 
 
 namespace WorldWizards.core.manager
@@ -15,7 +16,7 @@ namespace WorldWizards.core.manager
             // setup the manager registry
             ManagerRegistry setupManagerRegistry = ManagerRegistry.Instance; // touching Instance, starts up the Manager Registry
             /// This should be moved to be part of the TileMap code
-            //ResourceLoader.LoadResources();
+            ResourceLoader.LoadResources();
         }
     }
 }

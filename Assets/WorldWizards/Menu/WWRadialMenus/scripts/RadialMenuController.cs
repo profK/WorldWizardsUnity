@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class RadialMenuController : MonoBehaviour
 {
@@ -27,16 +28,25 @@ public class RadialMenuController : MonoBehaviour
 
 
         public ButtonRec(string text, Sprite image, params ButtonRec[] children)
+
         {
+
             this.text = text;
             this.image = image;
             this.children = new List<ButtonRec>();
             this.children.AddRange(children);
         }
 
+        public ButtonRec(ButtonRec brec) :
+            this(brec.text, brec.image, brec.children.ToArray())
+        {
+            //nop
+        }
+
         public void AddMenu(ButtonRec rec)
         {
             children.Add(rec);
+            
         }
 
         public void RemoveMenu(ButtonRec rec)
@@ -51,20 +61,24 @@ public class RadialMenuController : MonoBehaviour
 
     public void Fold()
     {
+        if (_folded)
+        {
+            return;
+        }
         _storedPositions.Clear();
         for (int i = 0; i < transform.childCount; i++)
         {
             RadialMenuController rmc = transform.GetChild(i).gameObject.GetComponent<RadialMenuController>();
             if (rmc != null)
             {
-                if (!(rmc.transform.localPosition == transform.localPosition))
+                if (rmc.transform.localPosition != transform.localPosition)
                 {
                     _storedPositions.Add(rmc.gameObject, rmc.transform.localPosition);
                     rmc.transform.localPosition = transform.localPosition;
-                    rmc.gameObject.SetActive(false);
+                   
                     //recurse
                 }
-
+                rmc.HideMenu(true);
                 rmc.Fold();
             }
         }
@@ -74,24 +88,46 @@ public class RadialMenuController : MonoBehaviour
 
     public void Unfold()
     {
+        if (!_folded)
+        {
+            return;
+        }
         for (int i = 0; i < transform.childCount; i++)
         {
             RadialMenuController rmc = transform.GetChild(i).gameObject.GetComponent<RadialMenuController>();
             if (rmc != null)
             {
-                if (!(_storedPositions[rmc.gameObject] == transform.localPosition))
-                {
+                if (_storedPositions[rmc.gameObject] != transform.localPosition){
                     rmc.transform.localPosition = _storedPositions[rmc.gameObject];
-                    rmc.gameObject.SetActive(true);
+                   
                     //recurse
-
                 }
+                rmc.HideMenu(false);
 
                 // unfoldign is NOT recursive unlike folding
             }
         }
 
         _folded = false;
+    }
+
+    private void HideMenu(bool state)
+    {
+        Button b = gameObject.GetComponent<Button>();
+        if (b != null)
+        {
+            b.enabled = !state;        }
+        Image i = gameObject.GetComponent<Image>();
+        if (i != null)
+        {
+            i.enabled = !state;
+        }
+
+        Text t = gameObject.GetComponentInChildren<Text>();
+        if (t != null)
+        {
+            t.enabled = !state;
+        }
     }
 
     public void SetCenter(bool b)
@@ -112,6 +148,10 @@ public class RadialMenuController : MonoBehaviour
 
     public void OnDrag(BaseEventData data)
     {
+        if (!EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
         PointerEventData ped = data as PointerEventData;
         if (_menuMode == MODE.CENTER)
         {
@@ -119,8 +159,14 @@ public class RadialMenuController : MonoBehaviour
         }
     }
 
+
+
     public void OnScroll(BaseEventData data)
     {
+        if (!EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
         PointerEventData ped = data as PointerEventData;
         if (_menuMode == MODE.CENTER)
         {
@@ -132,31 +178,68 @@ public class RadialMenuController : MonoBehaviour
         }
     }
 
-    public void OnClick()
+    public void OnPointerClick(BaseEventData eventData)
     {
-      
+        
+        if ((!EventSystem.current.IsPointerOverGameObject())||
+            (!GetComponent<Button>().enabled))
+
+        {
+            return;
+        }
+        Debug.Log("Click on button "+GetComponentInChildren<Text>().text);
+        PointerEventData ped = eventData as PointerEventData;
+        
         if (_menuMode == MODE.MENU)
         {
-            RadialMenuController parentRmc = GetComponentInParent<RadialMenuController>();
-            if (parentRmc != null)
+            if (ped.button == PointerEventData.InputButton.Left)
             {
-                parentRmc.Fold();
-            }
+                if (transform.parent != null)
+                {
+                    RadialMenuController parentRmc =
+                        transform.parent.GetComponentInParent<RadialMenuController>();
+                    if (parentRmc != null)
+                    {
+                        parentRmc.Fold();
+                        parentRmc.HideMenu(true);
+                        HideMenu(false);
+                        _menuMode = MODE.CENTER;
+                    }
+                }
 
-            Unfold();
+                Unfold();
+            } 
         }
         else
         {
-            // just fold or unfold
-            if (_folded)
+            if (ped.button == PointerEventData.InputButton.Left)
             {
-                Unfold();
+                // just fold or unfold
+                if (_folded)
+                {
+                    Unfold();
+                }
+                else
+                {
+                    Fold();
+                }
             }
-            else
+            else if (ped.button == PointerEventData.InputButton.Right)
             {
                 Fold();
-            }
+                if (transform.parent != null)
+                {
+                    RadialMenuController parentRmc =
+                        transform.parent.GetComponentInParent<RadialMenuController>();
+                    if (parentRmc != null)
+                    {
+                        parentRmc.Unfold();
+                        _menuMode = MODE.MENU;
+                    }
+                }
 
+                ;
+            }
         }
 
     }
