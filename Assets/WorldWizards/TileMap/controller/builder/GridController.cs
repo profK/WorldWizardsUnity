@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using WorldWizards.core.entity.coordinate;
 using WorldWizards.core.entity.coordinate.utils;
 
@@ -11,6 +11,31 @@ namespace WorldWizards.core.controller.builder
     public class GridController : MonoBehaviour
     {
         [SerializeField] private GameObject grid;
+        [SerializeField] private GameObject gridCursor
+            ;
+
+        public GameObject Cursor
+        {
+            get { return gridCursor; }
+        }
+
+        public double TileWidth
+        {
+            get
+            {
+                return transform.localScale.x * 0.01;
+            }
+        }
+
+        public double TileDepth
+        {
+            get
+            {
+                return transform.localScale.z * 0.01;
+            }
+        }
+
+
         private int height;
         private GameObject playerReferenceScale;
         [SerializeField] private Material gridMat;
