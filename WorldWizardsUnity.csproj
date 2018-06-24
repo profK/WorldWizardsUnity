@@ -381,6 +381,7 @@
     <Compile Include="Assets\WorldWizards\Menu\WWRadialMenus\scripts\RadialButtonController.cs" />
     <Compile Include="Assets\WorldWizards\Menu\WWRadialMenus\scripts\RadialMenuController.cs" />
     <Compile Include="Assets\WorldWizards\Menu\WWRadialMenus\scripts\SelectionButtonsParent.cs" />
+    <Compile Include="Assets\WorldWizards\TileMap\controller\builder\GridClickHandler.cs" />
     <Compile Include="Assets\WorldWizards\TileMap\controller\builder\GridController.cs" />
     <Compile Include="Assets\WorldWizards\TileMap\controller\builder\MaterialSwitcher.cs" />
     <Compile Include="Assets\WorldWizards\TileMap\controller\builder\SceneScalerController.cs" />
