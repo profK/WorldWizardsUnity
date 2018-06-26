@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using WorldWizards.core.controller.resources;
@@ -68,7 +68,7 @@ namespace WorldWizards.core.entity.gameObject.utils
         /// <param name="gameObject">The base GameObject which contains only resource, location, and rotation data</param>
         /// <param name="metadata">The metadata which will be used to construct the WWObject</param>
         /// <returns></returns>
-        public static WWObject ConstructWWObject(GameObject gameObject, WWResourceMetadata metadata)
+        private static WWObject ConstructWWObject(GameObject gameObject, WWResourceMetadata metadata)
         {
             // Make the GameObject into a Tile, Prop, etc.
             Type type = WWTypeHelper.ConvertToSysType(metadata.wwObjectMetadata.type);

@@ -14,6 +14,11 @@ using WorldWizards.core.entity.gameObject.resource.metaData;
 //temporary
 using UnityEditor;
 using UnityEditorInternal;
+using System.Collections.Generic;
+using WorldWizards.core.entity.coordinate;
+using WorldWizards.core.entity.gameObject;
+using WorldWizards.core.entity.gameObject.utils;
+using WorldWizards.core.entity.level.utils;
 
 
 public class MenuManager : Manager {
@@ -22,6 +27,8 @@ public class MenuManager : Manager {
     private Sprite rootMenuSprite;
     private Sprite defaultMenuSprite;
     private GameObject basicButtonPrefab;
+
+    
 
     public float spacing = 20f;
     public int maxMenus = 8;
@@ -55,6 +62,7 @@ public class MenuManager : Manager {
         foreach (GameObject go in goa)
         {
             WWResourceMetadata md = go.GetComponent<WWResourceMetadata>();
+            
             if (md != null)
             {
                 WWWallMetadata wmd = md.wwTileMetadata.wwWallMetadata;
@@ -71,10 +79,30 @@ public class MenuManager : Manager {
                     //t2.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,img.width/5);
                     //t2.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, img.height/5);
                     newButton.transform.parent = viewport.transform;
+                    newButton.GetComponent<Button>().onClick.AddListener(
+                        delegate() { DoTileSelect(md); });
+
                 }
             }
         }
     }
+
+    private void DoTileSelect(WWResourceMetadata rmd)
+    {
+        SceneGraphManager sgMgr =
+            ManagerRegistry.Instance.GetAnInstance<SceneGraphManager>();
+
+        
+        var wwTransform = new WWTransform(sgMgr.GridController.CursorLocation, 0);
+        WWObjectData objData = WWObjectFactory.CreateNew(wwTransform,
+                rmd.tag);
+        var curObject = WWObjectFactory.Instantiate(objData);
+
+    }
+
+    // thsi is copied from Builder Agorthims, consider centralizing
+
+
 
     public GameObject MakeRadialMenu(ButtonRec recRoot)
     {

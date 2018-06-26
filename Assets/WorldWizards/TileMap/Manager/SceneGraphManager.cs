@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using WorldWizards.core.controller.builder;
 using WorldWizards.core.entity.common;
 using WorldWizards.core.entity.coordinate;
 using WorldWizards.core.entity.gameObject;
@@ -13,6 +14,11 @@ namespace WorldWizards.core.manager
     /// </summary>
     public interface SceneGraphManager: Manager
     {
+        // A reference to the GridController currently in the scene, or NULL
+        // if none is present
+        GridController GridController { get; }
+    
+
         /// <summary>
         /// Determine how many WWObjects are in the scene graph
         /// </summary>

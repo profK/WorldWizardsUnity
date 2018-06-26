@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using WorldWizards.core.controller.resources;
@@ -95,7 +95,7 @@ namespace WorldWizards.core.entity.level.utils
         /// <param name="coordIndex">The coordinate index for this perimeter wall.</param>
         /// <param name="rotation">The valid rotation for this perimeter.</param>
         /// <param name="resourceTag">The resourceTag from which to load the WWObject from.</param>
-        private static void PlaceWallObject(IntVector3 coordIndex, int rotation, string resourceTag)
+        public static void PlaceWallObject(IntVector3 coordIndex, int rotation, string resourceTag)
         {
             var coordinate = new Coordinate(coordIndex);
             var wwTransform = new WWTransform(coordinate, rotation);

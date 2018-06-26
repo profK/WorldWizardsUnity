@@ -29,6 +29,20 @@ namespace WorldWizards.core.manager
         /// </summary>
         private readonly SceneDictionary sceneDictionary;
 
+        private GridController _gridController=null;
+        public GridController GridController
+        {
+            get
+            {
+                if (_gridController == null)
+                {
+                    _gridController = Object.FindObjectOfType<GridController>();
+                }
+
+                return _gridController;
+            }
+        }
+
         /// <summary>
         /// Basic constructor.
         /// </summary>
@@ -94,7 +108,8 @@ namespace WorldWizards.core.manager
                 obj.transform.position = newPos;
                 obj.transform.localScale = Vector3.one * CoordinateHelper.tileLengthScale;
             }
-            var gridController = Object.FindObjectOfType<GridController>();
+
+            var gridController = GridController;
             gridController.RefreshGrid();
         }
 

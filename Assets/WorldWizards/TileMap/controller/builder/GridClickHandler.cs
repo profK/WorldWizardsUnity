@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using WorldWizards.core.controller.builder;
+using WorldWizards.core.entity.coordinate;
+using WorldWizards.core.entity.coordinate.utils;
 
 public class GridClickHandler : MonoBehaviour
 {
@@ -24,13 +26,8 @@ public class GridClickHandler : MonoBehaviour
     {
         PointerEventData ped  = data as PointerEventData;
         Vector3 collisionPos = ped.pointerCurrentRaycast.worldPosition;
-        currentGridPos = new Vector2(
-            Mathf.FloorToInt(collisionPos.x/(float)gridC.TileWidth),
-            Mathf.FloorToInt(collisionPos.z/(float)gridC.TileDepth));
-        gridC.Cursor.transform.position = new Vector3(
-            currentGridPos.x*(float)gridC.TileWidth,
-            collisionPos.y,
-            currentGridPos.y*(float)gridC.TileDepth
-            );
+        Coordinate c = CoordinateHelper.UnityCoordToWWCoord(collisionPos);
+        c.SetOffset(Vector3.zero/**new Vector3(0.5f,0.5f,0.5f)**/);
+        gridC.CursorLocation = c;
     }
 }

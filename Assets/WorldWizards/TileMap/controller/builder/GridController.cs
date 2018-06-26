@@ -1,6 +1,8 @@
 using UnityEngine;
 using WorldWizards.core.entity.coordinate;
 using WorldWizards.core.entity.coordinate.utils;
+using WorldWizards.core.entity.gameObject;
+using WorldWizards.core.manager;
 
 namespace WorldWizards.core.controller.builder
 {
@@ -11,8 +13,7 @@ namespace WorldWizards.core.controller.builder
     public class GridController : MonoBehaviour
     {
         [SerializeField] private GameObject grid;
-        [SerializeField] private GameObject gridCursor
-            ;
+        [SerializeField] private GameObject gridCursor;
 
         public GameObject Cursor
         {
@@ -21,18 +22,31 @@ namespace WorldWizards.core.controller.builder
 
         public double TileWidth
         {
-            get
-            {
-                return transform.localScale.x * 0.01;
-            }
+            get { return transform.localScale.x * 0.01; }
         }
 
         public double TileDepth
         {
-            get
+            get { return transform.localScale.z * 0.01; }
+        }
+
+        private Coordinate _currentGridPos;
+
+        public Coordinate CursorLocation
+        {
+            get { return _currentGridPos; }
+            set
             {
-                return transform.localScale.z * 0.01;
+                _currentGridPos = value;
+                Cursor.transform.position = CoordinateHelper.WWCoordToUnityCoord(
+                    _currentGridPos);
             }
+
+        }
+
+        public int GridHeight
+        {
+            get { return height; }
         }
 
 
@@ -49,10 +63,10 @@ namespace WorldWizards.core.controller.builder
         /// </summary>
         private void Start()
         {
-           // playerReferenceScale = Instantiate(Resources.Load("Prefabs/PlayerScale")) as GameObject;
+            // playerReferenceScale = Instantiate(Resources.Load("Prefabs/PlayerScale")) as GameObject;
             RefreshGrid();
         }
-        
+
         private void SetGridScale()
         {
             var tileLengthScale = CoordinateHelper.tileLengthScale;
@@ -87,12 +101,12 @@ namespace WorldWizards.core.controller.builder
             grid.transform.position = new Vector3(0, yPos, 0);
             Coordinate c = CoordinateHelper.UnityCoordToWWCoord(grid.transform.position);
             // set the scale too
-            SetGridScale();            
-           /* playerReferenceScale.transform.position = new Vector3(0,
-                yPos,
-                0);*/
+            SetGridScale();
+            /* playerReferenceScale.transform.position = new Vector3(0,
+                 yPos,
+                 0);*/
         }
-        
+
         /// <summary>
         /// Set the height to a specific index and refresh.
         /// </summary>
@@ -101,7 +115,7 @@ namespace WorldWizards.core.controller.builder
             this.height = height;
             RefreshGrid();
         }
-        
+
         /// <summary>
         /// Move the grid up one step.
         /// </summary>
@@ -119,5 +133,8 @@ namespace WorldWizards.core.controller.builder
             height--;
             RefreshGrid();
         }
+
+        
+
     }
 }
