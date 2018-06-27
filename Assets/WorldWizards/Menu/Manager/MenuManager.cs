@@ -17,17 +17,16 @@ using UnityEditorInternal;
 using System.Collections.Generic;
 using WorldWizards.core.entity.coordinate;
 using WorldWizards.core.entity.gameObject;
+using WorldWizards.core.entity.gameObject.resource;
 using WorldWizards.core.entity.gameObject.utils;
 using WorldWizards.core.entity.level.utils;
 
 
 public class MenuManager : Manager {
 
+    
+    private GameObject TileButtonPrefab;
     private Canvas uiCanvas;
-    private Sprite rootMenuSprite;
-    private Sprite defaultMenuSprite;
-    private GameObject basicButtonPrefab;
-
     
 
     public float spacing = 20f;
@@ -48,46 +47,48 @@ public class MenuManager : Manager {
         GameObject tileSelector = uiCanvas.transform.Find("TileSelector").gameObject;
         GameObject content =
             tileSelector.GetComponent<ScrollRect>().viewport.Find("Content").gameObject;
+        TileButtonPrefab = Resources.Load<GameObject>("TileButton");
         AddTextureButtons(content);
     }
 
     private void AddTextureButtons(GameObject viewport)
     {
-        GameObject buttonPrefab = Resources.Load<GameObject>("TileButton");
+        /*GameObject buttonPrefab = Resources.Load<GameObject>("TileButton");
         Dictionary<string, AssetBundle> bundles = WWAssetBundleController.GetAllAssetBundles();
         Debug.Log("bundles count= " + bundles.Count);
         AssetBundle bundle = bundles.First().Value; // just get a random bundle for now
         GameObject[] goa = bundle.LoadAllAssets<GameObject>();
-        Debug.Log("Game object count = " + goa.Length);
-        foreach (GameObject go in goa)
+        Debug.Log("Game object count = " + goa.Length);*/
+        foreach(string tag in WWResourceController.bundles.Keys)
         {
-            WWResourceMetadata md = go.GetComponent<WWResourceMetadata>();
-            
+            WWResource res = WWResourceController.GetResource(tag);
+            WWResourceMetadata md = res.GetMetaData();
             if (md != null)
             {
                 WWWallMetadata wmd = md.wwTileMetadata.wwWallMetadata;
                 if (wmd.east || wmd.west || wmd.north || wmd.south)
                 {
                     //TODO:  Move this to meta data because wont work in build!
-                    Texture2D img = AssetPreview.GetAssetPreview(go);
+                    Texture2D img = AssetPreview.GetAssetPreview(
+                        md.gameObject);
                     Sprite thumbNail =
                         Sprite.Create(img,new Rect(0,0,img.width,img.height), 
                             new Vector2((float)img.width/2, (float)img.height/2));
-                    GameObject newButton = GameObject.Instantiate(buttonPrefab);
+                    GameObject newButton = GameObject.Instantiate(TileButtonPrefab);
                     newButton.GetComponent<Image>().sprite = thumbNail;
                     RectTransform t2 = newButton.transform as RectTransform;
                     //t2.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,img.width/5);
                     //t2.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, img.height/5);
                     newButton.transform.parent = viewport.transform;
                     newButton.GetComponent<Button>().onClick.AddListener(
-                        delegate() { DoTileSelect(md); });
+                        delegate() { DoTileSelect(tag); });
 
                 }
             }
         }
     }
 
-    private void DoTileSelect(WWResourceMetadata rmd)
+    private void DoTileSelect(string resourceTag)
     {
         SceneGraphManager sgMgr =
             ManagerRegistry.Instance.GetAnInstance<SceneGraphManager>();
@@ -95,7 +96,7 @@ public class MenuManager : Manager {
         
         var wwTransform = new WWTransform(sgMgr.GridController.CursorLocation, 0);
         WWObjectData objData = WWObjectFactory.CreateNew(wwTransform,
-                rmd.tag);
+                resourceTag);
         var curObject = WWObjectFactory.Instantiate(objData);
 
     }
@@ -103,7 +104,7 @@ public class MenuManager : Manager {
     // thsi is copied from Builder Agorthims, consider centralizing
 
 
-
+        /* Radial Button Stuff
     public GameObject MakeRadialMenu(ButtonRec recRoot)
     {
         GameObject root = MakeRadialButton(recRoot);
@@ -114,6 +115,7 @@ public class MenuManager : Manager {
         return root;
     }
 
+ 
     private GameObject MakeRadialButton(ButtonRec recRoot)
     {
         GameObject newButton = GameObject.Instantiate(basicButtonPrefab);
@@ -243,7 +245,7 @@ public class MenuManager : Manager {
             }
         }
         
-    }
+    }*/
 
     // Use this for initialization
     void Start () {

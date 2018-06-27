@@ -11,7 +11,7 @@ namespace WorldWizards.core.manager
     /// </summary>
     public class WWMain : MonoBehaviour
     {
-        private void Awake()
+        void Awake()
         {
             // setup the manager registry
             ManagerRegistry setupManagerRegistry = ManagerRegistry.Instance; // touching Instance, starts up the Manager Registry
