@@ -30,6 +30,7 @@ namespace WorldWizards.core.entity.gameObject
 
        
 
+        /*
         public void OnPointerClick(BaseEventData data)
         {
             PointerEventData ped = data as PointerEventData;
@@ -51,6 +52,6 @@ namespace WorldWizards.core.entity.gameObject
                 }
 
             }
-        }
+        }*/
     }
 }
