@@ -3,8 +3,6 @@ CRC: 355253596
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: ww_basic_assets
+      Name: medeivalvillage
       Dependencies: {}
-    Info_1:
-      Name: arteria
-      Dependencies: {}
+    

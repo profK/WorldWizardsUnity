@@ -24,10 +24,20 @@ public class GridClickHandler : MonoBehaviour
 
     public void OnPointerClick(BaseEventData data)
     {
-        PointerEventData ped  = data as PointerEventData;
-        Vector3 collisionPos = ped.pointerCurrentRaycast.worldPosition;
-        Coordinate c = CoordinateHelper.UnityCoordToWWCoord(collisionPos);
-        c.SetOffset(Vector3.zero/**new Vector3(0.5f,0.5f,0.5f)**/);
+        PointerEventData ped = data as PointerEventData;
+        if (ped.button == PointerEventData.InputButton.Left)
+        {
+            ClickedAt(ped.pointerCurrentRaycast.worldPosition);
+
+        }
+    }
+
+    public void ClickedAt(Vector3 worldPos)
+    {
+        worldPos.y = transform.position.y + 0.1f;
+        Coordinate c = CoordinateHelper.UnityCoordToWWCoord(worldPos);
+        c.SetOffset(new Vector3(0f, 0f, 0));
         gridC.CursorLocation = c;
     }
+
 }

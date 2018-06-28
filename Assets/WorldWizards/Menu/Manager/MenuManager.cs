@@ -1,25 +1,16 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using Boo.Lang.Environments;
-using NUnit.Framework.Constraints;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using WorldWizards.core.manager;
-using ButtonRec = RadialMenuController.ButtonRec;
 using UnityEngine.UI;
 using WorldWizards.core.controller.resources;
 using WorldWizards.core.entity.gameObject.resource.metaData;
 //temporary
+# if UNITY_EDITOR
 using UnityEditor;
-using UnityEditorInternal;
-using System.Collections.Generic;
+#endif
 using WorldWizards.core.entity.coordinate;
 using WorldWizards.core.entity.gameObject;
 using WorldWizards.core.entity.gameObject.resource;
 using WorldWizards.core.entity.gameObject.utils;
-using WorldWizards.core.entity.level.utils;
 
 
 public class MenuManager : Manager {
@@ -68,14 +59,18 @@ public class MenuManager : Manager {
                 WWWallMetadata wmd = md.wwTileMetadata.wwWallMetadata;
                 if (wmd.east || wmd.west || wmd.north || wmd.south)
                 {
+                    GameObject newButton = GameObject.Instantiate(TileButtonPrefab);
+#if UNITY_EDITOR
                     //TODO:  Move this to meta data because wont work in build!
                     Texture2D img = AssetPreview.GetAssetPreview(
                         md.gameObject);
                     Sprite thumbNail =
                         Sprite.Create(img,new Rect(0,0,img.width,img.height), 
                             new Vector2((float)img.width/2, (float)img.height/2));
-                    GameObject newButton = GameObject.Instantiate(TileButtonPrefab);
+                   
                     newButton.GetComponent<Image>().sprite = thumbNail;
+#endif
+
                     RectTransform t2 = newButton.transform as RectTransform;
                     //t2.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,img.width/5);
                     //t2.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, img.height/5);
@@ -93,8 +88,8 @@ public class MenuManager : Manager {
         SceneGraphManager sgMgr =
             ManagerRegistry.Instance.GetAnInstance<SceneGraphManager>();
 
-        
-        var wwTransform = new WWTransform(sgMgr.GridController.CursorLocation, 0);
+        Coordinate loc = sgMgr.GridController.CursorLocation;
+        var wwTransform = new WWTransform(loc, 0);
         WWObjectData objData = WWObjectFactory.CreateNew(wwTransform,
                 resourceTag);
         var curObject = WWObjectFactory.Instantiate(objData);

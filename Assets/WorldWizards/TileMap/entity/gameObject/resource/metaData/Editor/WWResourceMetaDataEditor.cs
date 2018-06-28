@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using UnityEditor;
 using UnityEngine;
 using WorldWizards.core.entity.common;
@@ -160,7 +160,7 @@ namespace WorldWizards.core.entity.gameObject.resource.metaData.Editor
             else if (direction.Equals(WEST))
             {
                 spawnPos.x -= script.wwObjectMetadata.baseTileSize * 0.5f;
-                widthOffset = Vector3.fwd;
+                widthOffset = Vector3.forward;
             }
             DestroyHelpers();
 
