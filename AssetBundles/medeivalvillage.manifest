@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 2884296723
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 199b5183cf5fe6f92ba0243d1e27409e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 17a0a4f8e15856cd56f1cc4f4d7b4290
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 516488a202b7f4042809acfa1fbe929b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 41464b2ab71ba6e48af91a62e85a0722, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/TileSets/Medevil Village/Prefabs/MedeivalVillage/MedWall_Arch_A.prefab
+Dependencies: []
