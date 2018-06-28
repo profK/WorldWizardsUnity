@@ -19,6 +19,10 @@ public class GridClickHandler : MonoBehaviour
         get { return _currentlySelected; }
         set
         {
+            if (_currentlySelected == value)
+            {
+                return;
+            }
             if (value == null)
             {
                 _selectionCursor.transform.parent = null;
@@ -31,15 +35,14 @@ public class GridClickHandler : MonoBehaviour
                 if (rend != null)
                 {
                     _selectionCursor.SetActive(true);
+                    _selectionCursor.transform.parent = null;
                     _selectionCursor.transform.localScale =
-                        rend.bounds.extents * 2;
+                        rend.bounds.extents * 2.1f;
                     _selectionCursor.transform.parent = value.transform;
                     _selectionCursor.transform.localPosition = new Vector3(0, 0, -4.5f);
                 }
-
-                _currentlySelected = value;
             }
-
+            _currentlySelected = value;
         }
 
     }
@@ -68,14 +71,10 @@ public class GridClickHandler : MonoBehaviour
         {
             // throw a ray looking for game objects
             //Ray cast from collision back to camera
-            Vector3 rayStart = ped.pointerCurrentRaycast.worldPosition;
-            //GameObject debugSPhere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            //debugSPhere.transform.position = rayStart;
-         
-            Ray ray = new Ray(rayStart,
-                ped.pressEventCamera.transform.forward*-1f);
+           
+            Ray ray = ped.pressEventCamera.ScreenPointToRay(ped.position);
             RaycastHit hit;
-            Debug.DrawRay(ray.origin, ray.direction, Color.green, 5f);
+           
             if (Physics.Raycast(ray, out hit, float.MaxValue,
                 1 << LayerMask.NameToLayer("Default")))
             {
