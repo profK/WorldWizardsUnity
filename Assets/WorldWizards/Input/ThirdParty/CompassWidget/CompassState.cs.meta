@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 775bd6b8d4bc6b84ca24f1e56bc3e505
+timeCreated: 1536360505
+licenseType: Pro
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - offState: {fileID: 21300000, guid: f0fc733951966a54086ee5d7c142382d, type: 3}
+  - northImage: {fileID: 21300000, guid: 23e86c19ddbee5e4e9c3564f4a273cd1, type: 3}
+  - southImage: {fileID: 21300000, guid: b71b0a92b751ea44bbc0063c1ebb1787, type: 3}
+  - eastImage: {fileID: 21300000, guid: f7114f0c9b79a5e49b703275ae2505d4, type: 3}
+  - westImage: {fileID: 21300000, guid: 9804201f5a147824db639f3f52a8e3b6, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

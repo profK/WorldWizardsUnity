@@ -120,6 +120,7 @@ namespace WorldWizards.core.manager
 
 
         // Use this for initialization
+        // importnt that thsi happens before any managers are used
         void Start()
         {
            
