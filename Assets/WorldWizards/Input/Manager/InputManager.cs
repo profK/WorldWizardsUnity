@@ -11,6 +11,7 @@ using WorldWizards.core.entity.coordinate;
 using WorldWizards.core.entity.gameObject;
 using WorldWizards.core.entity.gameObject.resource;
 using WorldWizards.core.entity.gameObject.utils;
+using WorldWizards.core.entity.level.utils;
 using WWUtils;
 
 
@@ -50,6 +51,8 @@ public class MenuManager : Manager {
             return _gridClickHandler;
         }
     }
+    
+    
     
 
     public float spacing = 20f;
@@ -121,10 +124,9 @@ public class MenuManager : Manager {
         
 
         Coordinate loc = SGMgr.GridController.CursorLocation;
-        var wwTransform = new WWTransform(loc, 0);
-        WWObjectData objData = WWObjectFactory.CreateNew(wwTransform,
-                resourceTag);
-        var curObject = WWObjectFactory.Instantiate(objData);
+      
+        BuilderAlgorithms.PlaceWallObject(loc.Index,0,resourceTag);
+        
 
     }
 

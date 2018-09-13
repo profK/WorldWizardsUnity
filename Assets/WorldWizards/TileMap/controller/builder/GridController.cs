@@ -14,6 +14,7 @@ namespace WorldWizards.core.controller.builder
     {
         [SerializeField] private GameObject grid;
         [SerializeField] private GameObject gridCursor;
+        
 
         public GameObject Cursor
         {
@@ -134,7 +135,14 @@ namespace WorldWizards.core.controller.builder
             RefreshGrid();
         }
 
-        
 
+        public void RotateSelectedTileCW()
+        {
+        }
+
+        public void RotateSelectedTileCCW()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

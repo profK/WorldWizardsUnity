@@ -14,6 +14,8 @@ public class GridClickHandler : MonoBehaviour
     private GameObject _currentlySelected = null;
     private GameObject _selectionCursor;
 
+    
+    
     public GameObject SelectedObject
     {
         get { return _currentlySelected; }
@@ -36,6 +38,7 @@ public class GridClickHandler : MonoBehaviour
                 {
                     _selectionCursor.SetActive(true);
                     _selectionCursor.transform.parent = null;
+                    _selectionCursor.transform.rotation = Quaternion.identity;
                     _selectionCursor.transform.localScale =
                         rend.bounds.extents * 2.1f;
                     _selectionCursor.transform.parent = value.transform;
