@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 1099010995
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f1e4e393ac001120eb6ddbe93a8318fa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: e398f0aa3c68c9428126c584bef772d2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 41464b2ab71ba6e48af91a62e85a0722, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/TileSets/Medevil Village/TilePrefabs/MedFloor_StyleA.prefab
+- Assets/TileSets/Medevil Village/TilePrefabs/MedFloor_StyleB.prefab
+Dependencies: []
