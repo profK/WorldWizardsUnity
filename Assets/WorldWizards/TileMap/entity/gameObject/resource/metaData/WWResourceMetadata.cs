@@ -1,4 +1,5 @@
 using System;
+using UnityEditor;
 using UnityEngine;
 using WorldWizards.core.entity.gameObject.resource.metaData;
 
@@ -18,5 +19,13 @@ namespace WorldWizards.core.entity.gameObject.resource.metaData
         public WWDoorMetadata doorMetadata;
         public WWObjectMetadata wwObjectMetadata;
         public WWTileMetadata wwTileMetadata;
+
+       
+        public Texture2D Thumbnail;
+        
+        void Reset()
+        {
+            Thumbnail = AssetPreview.GetAssetPreview(gameObject);
+        }
     }
 }

@@ -28,10 +28,18 @@ namespace WorldWizards.core.entity.gameObject.resource.metaData.Editor
         public override void OnInspectorGUI()
         {
             var script = target as WWResourceMetadata;
+
+            EditorGUILayout.BeginHorizontal();
+            Rect imgRect = EditorGUILayout.GetControlRect(false,50,GUILayout.Width(50));
+           EditorGUI.DrawPreviewTexture(imgRect,script.Thumbnail);
+            EditorGUILayout.BeginVertical();
             script.wwObjectMetadata.type =
                 (WWType) EditorGUILayout.EnumPopup("Asset Type", script.wwObjectMetadata.type);
             script.wwObjectMetadata.baseTileSize =
                 EditorGUILayout.IntSlider("Base Tile Size", script.wwObjectMetadata.baseTileSize, 1, 10000);
+           EditorGUILayout.EndVertical();
+            EditorGUILayout.EndHorizontal();
+           
             if (script.wwObjectMetadata.type == WWType.Tile)
             {
                 DisplayCollisionsProperties(script);

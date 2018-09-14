@@ -13,7 +13,7 @@ namespace WorldWizards.core.controller.resources
         {
             var results = new List<string>();
 
-            string assetBundlesDirPath = Application.dataPath + "/../AssetBundles/";
+            string assetBundlesDirPath = Application.dataPath + "/../AssetBundles/StandaloneWindows/";
             var assetBundlesDirInfo = new DirectoryInfo(assetBundlesDirPath);
 
             FileInfo[] manifestList = assetBundlesDirInfo.GetFiles("*.manifest");

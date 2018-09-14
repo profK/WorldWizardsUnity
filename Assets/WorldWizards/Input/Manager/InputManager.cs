@@ -2,6 +2,7 @@ using UnityEngine;
 using WorldWizards.core.manager;
 using UnityEngine.UI;
 using WorldWizards.core.controller.resources;
+using WorldWizards.core.entity.common;
 using WorldWizards.core.entity.gameObject.resource.metaData;
 //temporary
 # if UNITY_EDITOR
@@ -93,7 +94,7 @@ public class MenuManager : Manager {
             if (md != null)
             {
                 WWWallMetadata wmd = md.wwTileMetadata.wwWallMetadata;
-                if (wmd.east || wmd.west || wmd.north || wmd.south)
+                if (md.wwObjectMetadata.type == WWType.Tile)
                 {
                     GameObject newButton = GameObject.Instantiate(TileButtonPrefab);
 #if UNITY_EDITOR
