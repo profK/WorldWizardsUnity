@@ -28,10 +28,17 @@ namespace WorldWizards.core.entity.gameObject.resource.metaData.Editor
         public override void OnInspectorGUI()
         {
             var script = target as WWResourceMetadata;
+            // set Thumbnail
+            
 
             EditorGUILayout.BeginHorizontal();
             Rect imgRect = EditorGUILayout.GetControlRect(false,50,GUILayout.Width(50));
-           EditorGUI.DrawPreviewTexture(imgRect,script.Thumbnail);
+            if (script.Thumbnail != null)
+            {
+                EditorGUI.DrawPreviewTexture(imgRect, script.Thumbnail);
+            }
+            
+
             EditorGUILayout.BeginVertical();
             script.wwObjectMetadata.type =
                 (WWType) EditorGUILayout.EnumPopup("Asset Type", script.wwObjectMetadata.type);

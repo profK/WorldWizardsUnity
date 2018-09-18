@@ -99,8 +99,7 @@ public class MenuManager : Manager {
                     GameObject newButton = GameObject.Instantiate(TileButtonPrefab);
 #if UNITY_EDITOR
                     //TODO:  Move this to meta data because wont work in build!
-                    Texture2D img = AssetPreview.GetAssetPreview(
-                        md.gameObject);
+                    Texture2D img = md.Thumbnail;
                     Sprite thumbNail =
                         Sprite.Create(img,new Rect(0,0,img.width,img.height), 
                             new Vector2((float)img.width/2, (float)img.height/2));

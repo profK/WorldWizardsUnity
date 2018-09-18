@@ -1,7 +1,10 @@
 using System;
+using System.IO;
 using UnityEditor;
 using UnityEngine;
-using WorldWizards.core.entity.gameObject.resource.metaData;
+using UnityEngine.Experimental.Rendering;
+using UnityEngine.UI;
+
 
 namespace WorldWizards.core.entity.gameObject.resource.metaData
 {
@@ -19,13 +22,38 @@ namespace WorldWizards.core.entity.gameObject.resource.metaData
         public WWDoorMetadata doorMetadata;
         public WWObjectMetadata wwObjectMetadata;
         public WWTileMetadata wwTileMetadata;
-
-       
         public Texture2D Thumbnail;
-        
+
+#if UNITY_EDITOR
         void Reset()
         {
-            Thumbnail = AssetPreview.GetAssetPreview(gameObject);
+          
+
+            if (Thumbnail != null)
+            {
+                DestroyImmediate(Thumbnail);
+            }
+            Debug.Log("Making asset");
+            Texture2D pview = AssetPreview.GetAssetPreview(gameObject);
+           
+            string thumbPath = Path.GetDirectoryName(AssetDatabase.GetAssetPath(gameObject))+
+                "/Thumbnails";
+            if (!Directory.Exists(thumbPath))
+            {
+                Directory.CreateDirectory(thumbPath);
+            }
+
+            thumbPath = thumbPath.Replace('\\', '/');
+            string path = thumbPath + "/" + name + "_thumb.png";
+            File.WriteAllBytes(path,  pview.EncodeToPNG ());
+
+            Debug.Log("Loading T2D at "+path);
+            Thumbnail = (Texture2D)AssetDatabase.LoadAssetAtPath(path, typeof(Texture2D));
+            Debug.Log("TUmbnail="+Thumbnail);
         }
+        
+#endif        
     }
+
+   
 }

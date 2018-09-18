@@ -47,28 +47,31 @@
     <session id="-1523341053">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.27" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="12" />
+          <entry key="cs" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="12" />
+          <entry key="C#" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="438" />
+          <entry key="cs" value="4378" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="438" />
+          <entry key="C#" value="4378" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -80,111 +83,139 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/Input/Manager/InputManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="107" column="71" selection-start-line="107" selection-start-column="71" selection-end-line="107" selection-end-column="71" />
+            <state relative-caret-position="-57">
+              <caret line="101" column="48" selection-start-line="101" selection-start-column="48" selection-end-line="101" selection-end-column="48" />
               <folding>
-                <marker date="1536963591889" expanded="false" signature="6:521" ph="..." />
-                <marker date="1536963591889" expanded="true" signature="559:10056" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="771:1026" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="789:1020" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="844:970" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="1069:1346" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="1088:1340" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="1141:1291" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="1449:2168" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="1560:1844" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="2225:4166" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="2240:2668" ph="/* GameObject buttonPrefab = Resources.Load&lt;GameObject&gt;(&quot;TileButton&quot;); ... */" />
-                <marker date="1536963591889" expanded="true" signature="2733:4160" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="2894:4150" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="3040:4136" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="3745:3914" ph="/* t2.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,img.width/5); ... */" />
-                <marker date="1536963591889" expanded="true" signature="4217:4386" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="4451:4525" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="4605:9930" ph="/* Radial Button Stuff ... */" />
-                <marker date="1536963591889" expanded="true" signature="9985:9992" ph="{...}" />
-                <marker date="1536963591889" expanded="true" signature="10047:10054" ph="{...}" />
+                <marker date="1537307671548" expanded="false" signature="6:521" ph="..." />
+                <marker date="1537307671548" expanded="true" signature="559:10000" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="771:1026" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="789:1020" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="844:970" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="1069:1346" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="1088:1340" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="1141:1291" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="1449:2168" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="1560:1844" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="2225:4110" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="2240:2668" ph="/* GameObject buttonPrefab = Resources.Load&lt;GameObject&gt;(&quot;TileButton&quot;); ... */" />
+                <marker date="1537307671548" expanded="true" signature="2733:4104" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="2894:4094" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="3040:4080" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="3689:3858" ph="/* t2.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,img.width/5); ... */" />
+                <marker date="1537307671548" expanded="true" signature="4161:4330" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="4395:4469" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="4549:9874" ph="/* Radial Button Stuff ... */" />
+                <marker date="1537307671548" expanded="true" signature="9929:9936" ph="{...}" />
+                <marker date="1537307671548" expanded="true" signature="9991:9998" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWResourceMetadata.cs">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F718FBF7-147E-4022-82FD-ACF37BDD8584/91/1a27729c/TextureFormat.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="35" />
-              <folding>
-                <marker date="1536963972777" expanded="false" signature="6:112" ph="..." />
-                <marker date="1536963972777" expanded="true" signature="177:1145" ph="{...}" />
-                <marker date="1536963972777" expanded="true" signature="246:759" ph="/// This component is attached to all WWObjects that are to be created and added to an  ... " />
-                <marker date="1536963972777" expanded="true" signature="830:1143" ph="{...}" />
-                <marker date="1536963972777" expanded="true" signature="1051:1137" ph="{...}" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/Editor/WWResourceMetaDataEditor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+            <state relative-caret-position="303">
+              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
               <folding>
-                <marker date="1536965172850" expanded="false" signature="6:90" ph="..." />
-                <marker date="1536965172850" expanded="true" signature="162:12764" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="231:370" ph="/// This class is a UI helper that makes it easier for artists to setup assets in the Unity Inspector. ... " />
-                <marker date="1536965172850" expanded="true" signature="480:12762" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="1069:2738" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="1823:2536" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="2602:2728" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="2815:3918" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="4009:4987" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="4754:4819" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="4886:4977" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="5128:6260" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="5360:6250" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="5933:6025" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="6108:6236" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="6302:6884" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="6584:6659" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="6676:6749" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="6948:8102" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="7232:7380" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="7425:7571" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="7617:7765" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="7810:7960" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="8141:8661" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="8182:8251" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="8279:8345" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="8373:8439" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="8466:8531" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="8572:8651" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="8761:9745" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="9587:9661" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="9851:10606" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="10743:11281" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="10797:10849" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="11368:11942" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="11416:11468" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="11991:12086" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="12129:12234" ph="{...}" />
-                <marker date="1536965172850" expanded="true" signature="12303:12756" ph="{...}" />
+                <marker date="1537311203249" expanded="false" signature="6:90" ph="..." />
+                <marker date="1537311203249" expanded="true" signature="162:12915" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="231:370" ph="/// This class is a UI helper that makes it easier for artists to setup assets in the Unity Inspector. ... " />
+                <marker date="1537311203249" expanded="true" signature="480:12913" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="1069:2889" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="1355:1456" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="1974:2687" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="2753:2879" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="2966:4069" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="4160:5138" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="4905:4970" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="5037:5128" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="5279:6411" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="5511:6401" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="6084:6176" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="6259:6387" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="6453:7035" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="6735:6810" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="6827:6900" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="7099:8253" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="7383:7531" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="7576:7722" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="7768:7916" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="7961:8111" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="8292:8812" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="8333:8402" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="8430:8496" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="8524:8590" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="8617:8682" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="8723:8802" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="8912:9896" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="9738:9812" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="10002:10757" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="10894:11432" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="10948:11000" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="11519:12093" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="11567:11619" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="12142:12237" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="12280:12385" ph="{...}" />
+                <marker date="1537311203249" expanded="true" signature="12454:12907" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWDoorMetaData.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/Input/ThirdParty/CurvedUI/Scripts/Editor/CurvedUISettingsEditor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="705">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
-                <marker date="1536953800889" expanded="false" signature="6:71" ph="..." />
-                <marker date="1536953800889" expanded="true" signature="136:617" ph="{...}" />
-                <marker date="1536953800889" expanded="true" signature="205:286" ph="/// Metadata required for describing a Door. ... " />
-                <marker date="1536953800889" expanded="true" signature="337:615" ph="{...}" />
+                <marker date="1536953801039" expanded="false" signature="6:151" ph="..." />
+                <marker date="1536953801039" expanded="true" signature="227:18927" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="347:18925" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="586:1441" ph="LIFECYCLE" />
+                <marker date="1536953801039" expanded="true" signature="625:669" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="691:1427" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="870:1090" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="1493:8228" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="1873:2369" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="2699:5084" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="4475:4623" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="4623:4910" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="5465:5665" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="5569:5654" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="5676:5746" ph="/* or just show advanced settings ... */" />
+                <marker date="1536953801039" expanded="true" signature="7274:7385" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="7451:7518" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="7568:7635" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="8258:8725" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="8303:8417" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="8533:8672" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="8756:14802" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="9191:14691" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="10406:11235" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="14808:15162" ph="/// Draws the define switcher for different control methods.  ... " />
+                <marker date="1536953801039" expanded="true" signature="15210:16441" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="15577:16373" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="15874:16061" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="15906:16055" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="16478:16919" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="16928:17055" ph="///Travel the hierarchy and add CurvedUIVertexEffect to every gameobject that can be bent. ... " />
+                <marker date="1536953801039" expanded="true" signature="17096:17222" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="17228:17314" ph="/// Removes all CurvedUI components from this canvas. ... " />
+                <marker date="1536953801039" expanded="true" signature="17362:18912" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="17652:17723" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="17971:18047" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="18325:18537" ph="{...}" />
+                <marker date="1536953801039" expanded="true" signature="18801:18869" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -206,27 +237,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWTileMetaData.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <marker date="1536953800892" expanded="true" signature="78:586" ph="{...}" />
-                <marker date="1536953800892" expanded="true" signature="147:225" ph="/// Metadata required to describe a Tile. ... " />
-                <marker date="1536953800892" expanded="true" signature="276:584" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWDoorHolderMetaData.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
                 <marker date="1536953800887" expanded="false" signature="6:32" ph="..." />
-                <marker date="1536953800887" expanded="true" signature="97:517" ph="{...}" />
                 <marker date="1536953800887" expanded="true" signature="166:255" ph="/// Metadata necessary for describing a Door Holder. ... " />
                 <marker date="1536953800887" expanded="true" signature="312:515" ph="{...}" />
               </folding>
@@ -240,7 +256,6 @@
             <state relative-caret-position="120">
               <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
               <folding>
-                <marker date="1536953800894" expanded="true" signature="78:1987" ph="{...}" />
                 <marker date="1536953800894" expanded="true" signature="85:212" ph="/// Metadata required to describe whether a wall of the Tile should have collision or not. ... " />
                 <marker date="1536953800894" expanded="true" signature="263:1985" ph="{...}" />
                 <marker date="1536953800894" expanded="true" signature="461:640" ph="{...}" />
@@ -265,7 +280,6 @@
               <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <marker date="1536961119272" expanded="false" signature="6:130" ph="..." />
-                <marker date="1536961119272" expanded="true" signature="180:2634" ph="{...}" />
                 <marker date="1536961119272" expanded="true" signature="214:2632" ph="{...}" />
                 <marker date="1536961119272" expanded="true" signature="331:1214" ph="{...}" />
                 <marker date="1536961119272" expanded="true" signature="709:1175" ph="{...}" />
@@ -289,7 +303,6 @@
               <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <marker date="1536953798578" expanded="false" signature="6:52" ph="..." />
-                <marker date="1536953798578" expanded="true" signature="102:1360" ph="{...}" />
                 <marker date="1536953798578" expanded="true" signature="152:1358" ph="{...}" />
                 <marker date="1536953798578" expanded="true" signature="340:872" ph="{...}" />
                 <marker date="1536953798578" expanded="true" signature="392:496" ph="{...}" />
@@ -299,6 +312,24 @@
                 <marker date="1536953798578" expanded="true" signature="934:1228" ph="{...}" />
                 <marker date="1536953798578" expanded="true" signature="1040:1104" ph="{...}" />
                 <marker date="1536953798578" expanded="true" signature="1304:1352" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWResourceMetadata.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+              <folding>
+                <marker date="1537311389968" expanded="true" signature="6:132" ph="..." />
+                <marker date="1537311389968" expanded="true" signature="198:1991" ph="{...}" />
+                <marker date="1537311389968" expanded="true" signature="267:780" ph="/// This component is attached to all WWObjects that are to be created and added to an  ... " />
+                <marker date="1537311389968" expanded="true" signature="851:1984" ph="{...}" />
+                <marker date="1537311389968" expanded="true" signature="1072:1954" ph="{...}" />
+                <marker date="1537311389968" expanded="true" signature="1129:1202" ph="{...}" />
+                <marker date="1537311389968" expanded="true" signature="1496:1578" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -325,6 +356,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/controller/resources/WWAssetBundleController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WorldWizards/Input/GridControlHandlers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WorldWizards/Input/ThirdParty/CurvedUI/Scripts/Editor/CurvedUIHandSwitcherEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WorldWizards/Input/ThirdParty/CurvedUI/Scripts/Editor/CurvedUISettingsEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WorldWizards/Input/ThirdParty/CompassWidget/CompassState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WorldWizards/Framework/WWMain.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WorldWizards/Input/Manager/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -342,6 +374,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWDoorMetaData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/Editor/WWResourceMetaDataEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/level/utils/BuilderAlgorithms.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F718FBF7-147E-4022-82FD-ACF37BDD8584/91/1a27729c/TextureFormat.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AstarPathfindingProject/Editor/GraphEditors/RecastGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WorldWizards/Framework/ThirdParty/WWUtils/CSharp/Types/DataTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/controller/builder/GridController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -359,8 +392,8 @@
         <option value="$PROJECT_DIR$/Assets/WorldWizards/Input/GridControlHandlers.cs" />
         <option value="$PROJECT_DIR$/Assets/WorldWizards/TileMap/controller/resources/ResourceLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/WorldWizards/Input/Manager/InputManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWResourceMetadata.cs" />
         <option value="$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/Editor/WWResourceMetaDataEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWResourceMetadata.cs" />
       </list>
     </option>
   </component>
@@ -371,10 +404,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-31" />
-    <option name="y" value="75" />
-    <option name="width" value="1940" />
-    <option name="height" value="1220" />
+    <option name="x" value="-6" />
+    <option name="y" value="1" />
+    <option name="width" value="1932" />
+    <option name="height" value="1205" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -475,12 +508,14 @@
       <workItem from="1536767271162" duration="2546000" />
       <workItem from="1536777312132" duration="4233000" />
       <workItem from="1536861390111" duration="8495000" />
-      <workItem from="1536960160858" duration="4998000" />
+      <workItem from="1536960160858" duration="7056000" />
+      <workItem from="1537295796285" duration="4368000" />
+      <workItem from="1537300327879" duration="11054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25775000" />
+    <option name="totallyTimeSpent" value="43255000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -492,15 +527,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-31" y="75" width="1940" height="1220" extended-state="0" />
+    <frame x="-6" y="1" width="1932" height="1205" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17712766" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17948718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32688767" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.33146593" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39871088" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -607,13 +642,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/WorldWizards/Input/Manager/InputManager.cs</url>
-          <line>103</line>
+          <line>102</line>
           <properties documentPath="$PROJECT_DIR$/Assets/WorldWizards/Input/Manager/InputManager.cs" initialLine="102">
             <startOffsets>
-              <option value="3367" />
+              <option value="3311" />
             </startOffsets>
             <endOffsets>
-              <option value="3547" />
+              <option value="3491" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="15" />
@@ -712,23 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="39" />
-          <folding>
-            <marker date="1536953798580" expanded="false" signature="6:143" ph="..." />
-            <marker date="1536953798580" expanded="true" signature="193:2638" ph="{...}" />
-            <marker date="1536953798580" expanded="true" signature="240:2636" ph="{...}" />
-            <marker date="1536953798580" expanded="true" signature="357:586" ph="///     Gets the resource keys by asset bundle tag. ... " />
-            <marker date="1536953798580" expanded="true" signature="673:1042" ph="{...}" />
-            <marker date="1536953798580" expanded="true" signature="916:999" ph="{...}" />
-            <marker date="1536953798580" expanded="true" signature="1052:1290" ph="///     Gets the resource keys by asset bundle tag and filter by WWType ... " />
-            <marker date="1536953798580" expanded="true" signature="1398:1856" ph="{...}" />
-            <marker date="1536953798580" expanded="true" signature="1598:1813" ph="{...}" />
-            <marker date="1536953798580" expanded="true" signature="1700:1795" ph="{...}" />
-            <marker date="1536953798580" expanded="true" signature="1945:2271" ph="{...}" />
-            <marker date="1536953798580" expanded="true" signature="1997:2103" ph="{...}" />
-            <marker date="1536953798580" expanded="true" signature="2120:2261" ph="{...}" />
-            <marker date="1536953798580" expanded="true" signature="2329:2630" ph="{...}" />
-            <marker date="1536953798580" expanded="true" signature="2428:2489" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,13 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <marker date="1536953791145" expanded="false" signature="6:64" ph="..." />
-            <marker date="1536953791145" expanded="true" signature="102:729" ph="{...}" />
-            <marker date="1536953791145" expanded="true" signature="171:350" ph="/// This MonoBehavior needs to execute before everything else in World Wizards. ... " />
-            <marker date="1536953791145" expanded="true" signature="390:727" ph="{...}" />
-            <marker date="1536953791145" expanded="true" signature="417:721" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,13 +764,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWDoorMetaData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <marker date="1536953800889" expanded="false" signature="6:71" ph="..." />
+            <marker date="1536953800889" expanded="true" signature="205:286" ph="/// Metadata required for describing a Door. ... " />
+            <marker date="1536953800889" expanded="true" signature="337:615" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWTileMetaData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <marker date="1536953800892" expanded="true" signature="147:225" ph="/// Metadata required to describe a Tile. ... " />
+            <marker date="1536953800892" expanded="true" signature="276:584" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWDoorHolderMetaData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <marker date="1536953800887" expanded="false" signature="6:32" ph="..." />
+            <marker date="1536953800887" expanded="true" signature="166:255" ph="/// Metadata necessary for describing a Door Holder. ... " />
+            <marker date="1536953800887" expanded="true" signature="312:515" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWWallMetaData.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <marker date="1536953800894" expanded="true" signature="85:212" ph="/// Metadata required to describe whether a wall of the Tile should have collision or not. ... " />
+            <marker date="1536953800894" expanded="true" signature="263:1985" ph="{...}" />
+            <marker date="1536953800894" expanded="true" signature="461:640" ph="{...}" />
+            <marker date="1536953800894" expanded="true" signature="740:946" ph="{...}" />
+            <marker date="1536953800894" expanded="true" signature="956:1266" ph="/// Serializable boolean values are used to make editing metadata in the inspector easier, ... " />
+            <marker date="1536953800894" expanded="true" signature="1304:1979" ph="{...}" />
+            <marker date="1536953800894" expanded="true" signature="1370:1447" ph="{...}" />
+            <marker date="1536953800894" expanded="true" signature="1469:1545" ph="{...}" />
+            <marker date="1536953800894" expanded="true" signature="1568:1645" ph="{...}" />
+            <marker date="1536953800894" expanded="true" signature="1667:1743" ph="{...}" />
+            <marker date="1536953800894" expanded="true" signature="1764:1839" ph="{...}" />
+            <marker date="1536953800894" expanded="true" signature="1863:1941" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/controller/resources/ResourceLoader.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <marker date="1536961119272" expanded="false" signature="6:130" ph="..." />
-            <marker date="1536961119272" expanded="true" signature="180:2634" ph="{...}" />
             <marker date="1536961119272" expanded="true" signature="214:2632" ph="{...}" />
             <marker date="1536961119272" expanded="true" signature="331:1214" ph="{...}" />
             <marker date="1536961119272" expanded="true" signature="709:1175" ph="{...}" />
@@ -781,7 +847,6 @@
           <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <marker date="1536953798578" expanded="false" signature="6:52" ph="..." />
-            <marker date="1536953798578" expanded="true" signature="102:1360" ph="{...}" />
             <marker date="1536953798578" expanded="true" signature="152:1358" ph="{...}" />
             <marker date="1536953798578" expanded="true" signature="340:872" ph="{...}" />
             <marker date="1536953798578" expanded="true" signature="392:496" ph="{...}" />
@@ -795,24 +860,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWWallMetaData.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F718FBF7-147E-4022-82FD-ACF37BDD8584/91/1a27729c/TextureFormat.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="210">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/Input/Manager/InputManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="101" column="48" selection-start-line="101" selection-start-column="48" selection-end-line="101" selection-end-column="48" />
           <folding>
-            <marker date="1536953800894" expanded="true" signature="78:1987" ph="{...}" />
-            <marker date="1536953800894" expanded="true" signature="85:212" ph="/// Metadata required to describe whether a wall of the Tile should have collision or not. ... " />
-            <marker date="1536953800894" expanded="true" signature="263:1985" ph="{...}" />
-            <marker date="1536953800894" expanded="true" signature="461:640" ph="{...}" />
-            <marker date="1536953800894" expanded="true" signature="740:946" ph="{...}" />
-            <marker date="1536953800894" expanded="true" signature="956:1266" ph="/// Serializable boolean values are used to make editing metadata in the inspector easier, ... " />
-            <marker date="1536953800894" expanded="true" signature="1304:1979" ph="{...}" />
-            <marker date="1536953800894" expanded="true" signature="1370:1447" ph="{...}" />
-            <marker date="1536953800894" expanded="true" signature="1469:1545" ph="{...}" />
-            <marker date="1536953800894" expanded="true" signature="1568:1645" ph="{...}" />
-            <marker date="1536953800894" expanded="true" signature="1667:1743" ph="{...}" />
-            <marker date="1536953800894" expanded="true" signature="1764:1839" ph="{...}" />
-            <marker date="1536953800894" expanded="true" signature="1863:1941" ph="{...}" />
+            <marker date="1537307671548" expanded="false" signature="6:521" ph="..." />
+            <marker date="1537307671548" expanded="true" signature="559:10000" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="771:1026" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="789:1020" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="844:970" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="1069:1346" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="1088:1340" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="1141:1291" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="1449:2168" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="1560:1844" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="2225:4110" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="2240:2668" ph="/* GameObject buttonPrefab = Resources.Load&lt;GameObject&gt;(&quot;TileButton&quot;); ... */" />
+            <marker date="1537307671548" expanded="true" signature="2733:4104" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="2894:4094" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="3040:4080" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="3689:3858" ph="/* t2.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,img.width/5); ... */" />
+            <marker date="1537307671548" expanded="true" signature="4161:4330" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="4395:4469" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="4549:9874" ph="/* Radial Button Stuff ... */" />
+            <marker date="1537307671548" expanded="true" signature="9929:9936" ph="{...}" />
+            <marker date="1537307671548" expanded="true" signature="9991:9998" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/Input/ThirdParty/CurvedUI/Scripts/Editor/CurvedUISettingsEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <marker date="1536953801039" expanded="false" signature="6:151" ph="..." />
+            <marker date="1536953801039" expanded="true" signature="227:18927" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="347:18925" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="586:1441" ph="LIFECYCLE" />
+            <marker date="1536953801039" expanded="true" signature="625:669" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="691:1427" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="870:1090" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="1493:8228" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="1873:2369" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="2699:5084" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="4475:4623" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="4623:4910" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="5465:5665" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="5569:5654" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="5676:5746" ph="/* or just show advanced settings ... */" />
+            <marker date="1536953801039" expanded="true" signature="7274:7385" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="7451:7518" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="7568:7635" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="8258:8725" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="8303:8417" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="8533:8672" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="8756:14802" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="9191:14691" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="10406:11235" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="14808:15162" ph="/// Draws the define switcher for different control methods.  ... " />
+            <marker date="1536953801039" expanded="true" signature="15210:16441" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="15577:16373" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="15874:16061" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="15906:16055" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="16478:16919" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="16928:17055" ph="///Travel the hierarchy and add CurvedUIVertexEffect to every gameobject that can be bent. ... " />
+            <marker date="1536953801039" expanded="true" signature="17096:17222" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="17228:17314" ph="/// Removes all CurvedUI components from this canvas. ... " />
+            <marker date="1536953801039" expanded="true" signature="17362:18912" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="17652:17723" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="17971:18047" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="18325:18537" ph="{...}" />
+            <marker date="1536953801039" expanded="true" signature="18801:18869" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -830,132 +957,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/Input/Manager/InputManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/Editor/WWResourceMetaDataEditor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="107" column="71" selection-start-line="107" selection-start-column="71" selection-end-line="107" selection-end-column="71" />
+        <state relative-caret-position="303">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
           <folding>
-            <marker date="1536963591889" expanded="false" signature="6:521" ph="..." />
-            <marker date="1536963591889" expanded="true" signature="559:10056" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="771:1026" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="789:1020" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="844:970" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="1069:1346" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="1088:1340" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="1141:1291" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="1449:2168" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="1560:1844" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="2225:4166" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="2240:2668" ph="/* GameObject buttonPrefab = Resources.Load&lt;GameObject&gt;(&quot;TileButton&quot;); ... */" />
-            <marker date="1536963591889" expanded="true" signature="2733:4160" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="2894:4150" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="3040:4136" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="3745:3914" ph="/* t2.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,img.width/5); ... */" />
-            <marker date="1536963591889" expanded="true" signature="4217:4386" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="4451:4525" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="4605:9930" ph="/* Radial Button Stuff ... */" />
-            <marker date="1536963591889" expanded="true" signature="9985:9992" ph="{...}" />
-            <marker date="1536963591889" expanded="true" signature="10047:10054" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWDoorMetaData.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <marker date="1536953800889" expanded="false" signature="6:71" ph="..." />
-            <marker date="1536953800889" expanded="true" signature="136:617" ph="{...}" />
-            <marker date="1536953800889" expanded="true" signature="205:286" ph="/// Metadata required for describing a Door. ... " />
-            <marker date="1536953800889" expanded="true" signature="337:615" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWTileMetaData.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <marker date="1536953800892" expanded="true" signature="78:586" ph="{...}" />
-            <marker date="1536953800892" expanded="true" signature="147:225" ph="/// Metadata required to describe a Tile. ... " />
-            <marker date="1536953800892" expanded="true" signature="276:584" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWDoorHolderMetaData.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <marker date="1536953800887" expanded="false" signature="6:32" ph="..." />
-            <marker date="1536953800887" expanded="true" signature="97:517" ph="{...}" />
-            <marker date="1536953800887" expanded="true" signature="166:255" ph="/// Metadata necessary for describing a Door Holder. ... " />
-            <marker date="1536953800887" expanded="true" signature="312:515" ph="{...}" />
+            <marker date="1537311203249" expanded="false" signature="6:90" ph="..." />
+            <marker date="1537311203249" expanded="true" signature="162:12915" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="231:370" ph="/// This class is a UI helper that makes it easier for artists to setup assets in the Unity Inspector. ... " />
+            <marker date="1537311203249" expanded="true" signature="480:12913" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="1069:2889" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="1355:1456" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="1974:2687" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="2753:2879" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="2966:4069" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="4160:5138" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="4905:4970" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="5037:5128" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="5279:6411" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="5511:6401" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="6084:6176" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="6259:6387" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="6453:7035" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="6735:6810" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="6827:6900" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="7099:8253" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="7383:7531" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="7576:7722" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="7768:7916" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="7961:8111" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="8292:8812" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="8333:8402" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="8430:8496" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="8524:8590" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="8617:8682" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="8723:8802" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="8912:9896" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="9738:9812" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="10002:10757" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="10894:11432" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="10948:11000" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="11519:12093" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="11567:11619" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="12142:12237" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="12280:12385" ph="{...}" />
+            <marker date="1537311203249" expanded="true" signature="12454:12907" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/WWResourceMetadata.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="360">
+          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding>
-            <marker date="1536963972777" expanded="false" signature="6:112" ph="..." />
-            <marker date="1536963972777" expanded="true" signature="177:1145" ph="{...}" />
-            <marker date="1536963972777" expanded="true" signature="246:759" ph="/// This component is attached to all WWObjects that are to be created and added to an  ... " />
-            <marker date="1536963972777" expanded="true" signature="830:1143" ph="{...}" />
-            <marker date="1536963972777" expanded="true" signature="1051:1137" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/WorldWizards/TileMap/entity/gameObject/resource/metaData/Editor/WWResourceMetaDataEditor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
-          <folding>
-            <marker date="1536965172850" expanded="false" signature="6:90" ph="..." />
-            <marker date="1536965172850" expanded="true" signature="162:12764" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="231:370" ph="/// This class is a UI helper that makes it easier for artists to setup assets in the Unity Inspector. ... " />
-            <marker date="1536965172850" expanded="true" signature="480:12762" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="1069:2738" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="1823:2536" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="2602:2728" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="2815:3918" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="4009:4987" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="4754:4819" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="4886:4977" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="5128:6260" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="5360:6250" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="5933:6025" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="6108:6236" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="6302:6884" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="6584:6659" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="6676:6749" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="6948:8102" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="7232:7380" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="7425:7571" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="7617:7765" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="7810:7960" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="8141:8661" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="8182:8251" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="8279:8345" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="8373:8439" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="8466:8531" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="8572:8651" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="8761:9745" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="9587:9661" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="9851:10606" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="10743:11281" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="10797:10849" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="11368:11942" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="11416:11468" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="11991:12086" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="12129:12234" ph="{...}" />
-            <marker date="1536965172850" expanded="true" signature="12303:12756" ph="{...}" />
+            <marker date="1537311389968" expanded="true" signature="6:132" ph="..." />
+            <marker date="1537311389968" expanded="true" signature="198:1991" ph="{...}" />
+            <marker date="1537311389968" expanded="true" signature="267:780" ph="/// This component is attached to all WWObjects that are to be created and added to an  ... " />
+            <marker date="1537311389968" expanded="true" signature="851:1984" ph="{...}" />
+            <marker date="1537311389968" expanded="true" signature="1072:1954" ph="{...}" />
+            <marker date="1537311389968" expanded="true" signature="1129:1202" ph="{...}" />
+            <marker date="1537311389968" expanded="true" signature="1496:1578" ph="{...}" />
           </folding>
         </state>
       </provider>

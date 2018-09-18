@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4494036035551674}
   - component: {fileID: 33245082872787342}
   - component: {fileID: 23947082231624348}
-  - component: {fileID: 114306799030120518}
   - component: {fileID: 65721307817185920}
+  - component: {fileID: 114234591313712610}
   m_Layer: 0
   m_Name: MedFloor_StyleB
   m_TagString: Untagged
@@ -97,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 1.1363299, z: 10}
   m_Center: {x: 0, y: -4.432075, z: -8.9975}
---- !u!114 &114306799030120518
+--- !u!114 &114234591313712610
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,4 +145,5 @@ MonoBehaviour:
       south: 0
       west: 0
       top: 0
-      bottom: 1
+      bottom: 0
+  Thumbnail: {fileID: 2800000, guid: 9722f8573a2675045b52bfbfcc7a7ac2, type: 3}
