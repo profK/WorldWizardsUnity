@@ -368,6 +368,9 @@
                 </e>
                 <e p="ManagerSingleton.cs" t="Include" />
                 <e p="Unity" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="NewEditorMenuItems.cs" t="Include" />
+                  </e>
                   <e p="SerializationProxies" t="Include">
                     <e p="Templates" t="Include">
                       <e p="SPDictionaryTemplate.cs" t="Include" />

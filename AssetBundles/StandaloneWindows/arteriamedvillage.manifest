@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 759363824
+CRC: 2726527124
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 919bea69fa9b8603dd1f1b2ce2f975de
+    Hash: 493a4498de5d58818d89f6be98caf5c8
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 66a2a38ec42de2795ec4de1cdca9ca63
+    Hash: ed6da0b5f5abba6e4290a09e05f4f291
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -25,6 +25,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
 - Class: 65
   Script: {instanceID: 0}
 - Class: 114
@@ -32,6 +34,16 @@ ClassTypes:
 - Class: 115
   Script: {instanceID: 0}
 Assets:
+- Assets/TileSets/Medevil Village/TilePrefabs/MedWall_(Arch_A).prefab
+- Assets/TileSets/Medevil Village/TilePrefabs/MedWall_DoorOpening_A.prefab
+- Assets/TileSets/Medevil Village/TilePrefabs/MedWall_HalfTimbre_E.prefab
+- Assets/TileSets/Medevil Village/TilePrefabs/MedWall.prefab
+- Assets/TileSets/Medevil Village/TilePrefabs/MedWall_HalfTimbre_A.prefab
+- Assets/TileSets/Medevil Village/TilePrefabs/MedWall_HalfTimbre_B.prefab
 - Assets/TileSets/Medevil Village/TilePrefabs/MedFloor_StyleA.prefab
+- Assets/TileSets/Medevil Village/TilePrefabs/MedRoof_Thatched_A.prefab
 - Assets/TileSets/Medevil Village/TilePrefabs/MedFloor_StyleB.prefab
+- Assets/TileSets/Medevil Village/TilePrefabs/MedWall_HalfTimbre_F.prefab
+- Assets/TileSets/Medevil Village/TilePrefabs/MedWall_HalfTimbre_D.prefab
+- Assets/TileSets/Medevil Village/TilePrefabs/MedWall_HalfTimbre_C.prefab
 Dependencies: []

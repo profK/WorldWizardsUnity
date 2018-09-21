@@ -88,6 +88,7 @@
     <Compile Include="Assets\AstarPathfindingProject\PackageTools\Editor\EditorGUIx.cs" />
     <Compile Include="Assets\AstarPathfindingProject\PackageTools\Editor\EnumFlagDrawer.cs" />
     <Compile Include="Assets\AstarPathfindingProject\PackageTools\Editor\OptimizationHandler.cs" />
+    <Compile Include="Assets\WorldWizards\Framework\ThirdParty\WWUtils\Unity\Editor\NewEditorMenuItems.cs" />
     <Compile Include="Assets\WorldWizards\Input\ThirdParty\CurvedUI\Scripts\Editor\CurvedUIHandSwitcherEditor.cs" />
     <Compile Include="Assets\WorldWizards\Input\ThirdParty\CurvedUI\Scripts\Editor\CurvedUIInputModuleEditor.cs" />
     <Compile Include="Assets\WorldWizards\Input\ThirdParty\CurvedUI\Scripts\Editor\CurvedUIScriptOrder.cs" />

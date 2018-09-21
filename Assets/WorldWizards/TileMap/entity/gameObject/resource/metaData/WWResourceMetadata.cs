@@ -34,9 +34,10 @@ namespace WorldWizards.core.entity.gameObject.resource.metaData
                 DestroyImmediate(Thumbnail);
             }
             Debug.Log("Making asset");
-            Texture2D pview = AssetPreview.GetAssetPreview(gameObject);
+            GameObject go = Selection.activeGameObject;
+            Texture2D pview = AssetPreview.GetAssetPreview(go);
            
-            string thumbPath = Path.GetDirectoryName(AssetDatabase.GetAssetPath(gameObject))+
+            string thumbPath = Path.GetDirectoryName(AssetDatabase.GetAssetPath(go))+
                 "/Thumbnails";
             if (!Directory.Exists(thumbPath))
             {
@@ -45,11 +46,20 @@ namespace WorldWizards.core.entity.gameObject.resource.metaData
 
             thumbPath = thumbPath.Replace('\\', '/');
             string path = thumbPath + "/" + name + "_thumb.png";
+            Debug.Log("Writing PNG to "+path);
             File.WriteAllBytes(path,  pview.EncodeToPNG ());
 
             Debug.Log("Loading T2D at "+path);
+            AssetDatabase.Refresh();
             Thumbnail = (Texture2D)AssetDatabase.LoadAssetAtPath(path, typeof(Texture2D));
-            Debug.Log("TUmbnail="+Thumbnail);
+            if (Thumbnail == null)
+            {
+                Debug.Log("Failed to load "+path);
+            }
+            else
+            {
+                Debug.Log("TUmbnail=" + Thumbnail.name);
+            }
         }
         
 #endif        
