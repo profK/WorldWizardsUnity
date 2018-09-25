@@ -336,6 +336,7 @@
             <e p="UnityReferenceHelper.cs" t="Include" />
           </e>
         </e>
+        <e p="DesktopCameraController.cs" t="Include" />
         <e p="TileMapInputBridge.cs" t="Include" />
         <e p="WorldWizards" t="Include">
           <e p="Framework" t="Include">
@@ -489,7 +490,13 @@
                   <e p="CoordinateHelper.cs" t="Include" />
                 </e>
               </e>
-              <e p="gameObject" t="Include">
+              <e p="level" t="Include">
+                <e p="SceneDictionary.cs" t="Include" />
+                <e p="utils" t="Include">
+                  <e p="BuilderAlgorithms.cs" t="Include" />
+                </e>
+              </e>
+              <e p="WWObjects" t="Include">
                 <e p="Door.cs" t="Include" />
                 <e p="Interactable.cs" t="Include" />
                 <e p="Prop.cs" t="Include" />
@@ -517,12 +524,6 @@
                 <e p="WWObjectData.cs" t="Include" />
                 <e p="WWTransform.cs" t="Include" />
                 <e p="WWWalls.cs" t="Include" />
-              </e>
-              <e p="level" t="Include">
-                <e p="SceneDictionary.cs" t="Include" />
-                <e p="utils" t="Include">
-                  <e p="BuilderAlgorithms.cs" t="Include" />
-                </e>
               </e>
             </e>
             <e p="fileio" t="Include">

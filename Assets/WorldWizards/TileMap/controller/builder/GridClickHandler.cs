@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Experimental.UIElements;
 using WorldWizards.core.controller.builder;
 using WorldWizards.core.entity.coordinate;
 using WorldWizards.core.entity.coordinate.utils;
@@ -13,7 +14,7 @@ public class GridClickHandler : MonoBehaviour
 
     private GameObject _currentlySelected = null;
     private GameObject _selectionCursor;
-
+    private DesktopCameraController _camController;
     
     
     public GameObject SelectedObject
@@ -50,20 +51,42 @@ public class GridClickHandler : MonoBehaviour
 
     }
 
+    public DesktopCameraController DesktopCameraController
+    {
+        get
+        {
+            if (_camController == null)
+            {
+                _camController = Camera.allCameras[0].GetComponentInChildren<DesktopCameraController>();
+            }
+
+            return _camController;
+        }
+    }
+
     // Use this for initialization
     void Start ()
     {
         gridC = GetComponentInParent<GridController>();
         _selectionCursor = GameObject.Instantiate(Resources.Load<GameObject>("Prefabs/ObjectCursor"));
+        
+       
     }
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Update()
+    {
+        float md = Input.GetAxis("Mouse ScrollWheel");
+        if (md != 0)
+        {
+            DesktopCameraController.DollyZ(md * 10);
+        }
+        
+    }
 
     public void OnPointerClick(BaseEventData data)
     {
+        Debug.Log("Clicked!");
         PointerEventData ped = data as PointerEventData;
         if (ped.button == PointerEventData.InputButton.Left)
         {

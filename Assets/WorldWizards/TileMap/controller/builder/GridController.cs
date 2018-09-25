@@ -64,6 +64,7 @@ namespace WorldWizards.core.controller.builder
         /// </summary>
         private void Start()
         {
+            _currentGridPos = CoordinateHelper.UnityCoordToWWCoord(Cursor.transform.position);
             // playerReferenceScale = Instantiate(Resources.Load("Prefabs/PlayerScale")) as GameObject;
             RefreshGrid();
         }

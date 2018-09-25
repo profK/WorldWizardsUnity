@@ -45,8 +45,7 @@ public class MenuManager : Manager {
         {
             if (_gridClickHandler == null)
             {
-                _gridClickHandler = SGMgr.GridController
-                    .GetComponentInChildren<GridClickHandler>();
+                _gridClickHandler = GameObject.FindObjectOfType<GridClickHandler>();
             }
 
             return _gridClickHandler;
@@ -61,15 +60,12 @@ public class MenuManager : Manager {
 
     public MenuManager()
     {
-        uiCanvas = Camera.main.transform.GetComponentInChildren<Canvas>();
-        if (uiCanvas == null)
-        {  //make a UI canvas
+         //make a UI canvas
             GameObject obj = GameObject.Instantiate(
                 Resources.Load<GameObject>("DesktopEditorCanvas"));
             //obj.transform.parent = Camera.main.transform;
             uiCanvas = obj.GetComponent<Canvas>();
-           
-        }
+         
 
         GameObject tileSelector = uiCanvas.transform.Find("TileSelector").gameObject;
         GameObject content =
