@@ -101,6 +101,7 @@ namespace WorldWizards.core.entity.level.utils
             var wwTransform = new WWTransform(coordinate, rotation);
             WWObjectData objData = WWObjectFactory.CreateNew(wwTransform, resourceTag);
             WWObject go = WWObjectFactory.Instantiate(objData);
+            go.gameObject.AddComponent<WWObjectClickHandler>(); // hook for cicks on object
             if (! ManagerRegistry.Instance.GetAnInstance<SceneGraphManager>().Add(go))
             {
                 // this error should never happen as TryToPlaceWall checks for collision before calling this function

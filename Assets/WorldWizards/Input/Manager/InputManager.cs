@@ -1,3 +1,4 @@
+using Pathfinding.Util;
 using UnityEngine;
 using WorldWizards.core.manager;
 using UnityEngine.UI;
@@ -114,6 +115,7 @@ public class MenuManager : Manager {
                     newButton.transform.parent = viewport.transform;
                     newButton.GetComponent<Button>().onClick.AddListener(
                         delegate() { DoTileSelect(tag); });
+                    
 
                 }
             }
@@ -128,7 +130,6 @@ public class MenuManager : Manager {
       
         BuilderAlgorithms.PlaceWallObject(loc.Index,0,resourceTag);
         
-
     }
 
     private void DoCardinalSelect(DataTypes.CARDINAL direction)

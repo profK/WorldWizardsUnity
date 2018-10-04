@@ -471,6 +471,7 @@
                 <e p="GridController.cs" t="Include" />
                 <e p="MaterialSwitcher.cs" t="Include" />
                 <e p="SceneScalerController.cs" t="Include" />
+                <e p="WWObjectClickHandler.cs" t="Include" />
               </e>
               <e p="resources" t="Include">
                 <e p="ResourceLoader.cs" t="Include" />
